@@ -1,5 +1,8 @@
 # Lab Coding Practices/Onboarding
 
+#### [Lab Software Summaries](#lab-software-summaries)
+For details on the software that the Lehigh Info Lab has developed, check out the [Lab Software Summaries](#lab-software-summaries) section
+
 ## Intro
 This README compiles the coding practices that we **should** use in the lab. Do as I say, not as I do or something like that - but I am actively updating repositories towards following these guidelines. In addition, this repository will include information about the software we have in the lab, what they are used for, and links to each repository for easy access.
 
@@ -65,3 +68,27 @@ Or better yet, exporting your entire environment as a container to docker! https
 
 ## Contact
 If you would like more resources on anything else related to coding practices, you can contact me at jzt320@lehigh.edu. I'm more than happy to share tutorials, discuss our lab's software and work, or do some pair programming. Feel free to also contribute your thoughts here.
+
+
+
+
+# Lab Software Summaries
+This section contains summaries of the software tools we developed and use in the lab, their purposes, and how they fit into our workflow. In addition, we have links to the repositories included here for ease of access.
+
+## [DiffBond](https://github.com/LehighInfolab/DiffBond-V2)
+DiffBond identifies and classifies three intermolecular bonds at the interface of protein complexes: ionic bonds, salt bridges, and hydrogen bonds. In addition, it generates graphs of the atoms involved in intermolecular bonds called Bond Networks that are used downstream in [BANSA](https://github.com/LehighInfolab/BondNetworkAnalysis) and in [BondNetworkGNN](https://github.com/LehighInfolab/BondNetworkGNN).
+
+
+The code for DiffBond can be found [here](https://github.com/LehighInfolab/DiffBond-V2). The paper for DiffBond can be found [here](https://www.mdpi.com/1420-3049/27/19/6178). For any questions about this software, you can contact jzt320@lehigh.edu.
+
+
+## [BANSA](https://github.com/LehighInfolab/BondNetworkAnalysis)
+BANSA is a method for aligning Bond Network graphs (graphs representing atoms that form intermolecular bonds at the interface) with each other. This method is useful for quick structure alignment using intermolecular bonds as anchor points for alignment transformation.
+
+The method is still being developed and the code can be found [here](https://github.com/LehighInfolab/BondNetworkAnalysis). A preprint of the method can be found [here](https://www.biorxiv.org/content/10.1101/2023.10.16.562551v1.abstract). For any questions about this software, you can contact jzt320@lehigh.edu.
+
+
+## [HBCompare](https://github.com/LehighInfolab/HBcompare)
+HBcompare is a method that classifies protein structures according to ligand binding preference categories by analyzing hydrogen bond topology using a GCN model.
+
+The repository can be found [here](https://github.com/LehighInfolab/HBcompare) and the paper can be found [here](https://www.mdpi.com/2218-273X/12/11/1589). For any questions about this software, you can contact jzt320@lehigh.edu.
